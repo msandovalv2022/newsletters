@@ -1,0 +1,43 @@
+extends ../template/main
+append variables 
+    - pathImage = ''
+block content
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/bannerv3.png',
+        'Sodexo'
+    )
+    +MARGIN(
+        '20px'
+    )
+
+    +TEXT(
+        '<p style="font-size: 19px; line-height: 25px; color: #2A2763;">A partir de este momento <b>podrás realizar tus pedidos<br> de Diligo en tu nueva plataforma Sodexo Suite: + ágil, segura y eficiente que nunca! </b><br><br> ¡Así de fácil tendrás acceso a todos tus servicios!'
+    )
+
+    +MARGIN(
+        '20px'
+    )
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/icons.png',
+        'Sodexo'
+    )
+
+    +MARGIN(
+        '50px'
+    )
+    
+    //- +HERO_BANNER(
+    //-     'https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/Recurso%2024.png'
+    //- )
+    +TEXT_BLUEBOX(
+        '<p style="font-size: 19px; line-height: 25px; color: #fff;"> <img style= "max-width: 80%; translate: 0 -35px;" src= "https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/Recurso%2024.png"><br><br> <b style="font-size: 24px; margin-right: 150px;">Activa tu usuario:</b> <br><br> <span style="align: left;">Recibirás un correo electrónico de <br> <span style= "color: #FFAC00" >notificaciones.motivacion.mx@app.sodexo.com</span> con el <br> asunto <b>SODEXO SUITE - Activar usuario.</b></span></span> <br><br> <span style= "color: #FFAC00; align: left;">Haz clic en la liga que viene dentro del correo</span> y activa tu <br> cuenta <br><br> <span>Para ingresar, <span style= "color: #FFAC00">introduce usuario y contraseña, selecciona la razón social, producto y contrato con el que trabajarás</span></span> <br><br> <span style= "color: #FFAC00"> Si tienes dudas o comentarios escríbenos a: <br> <b style= "color: #fff"; font-size: 22px>soporte.sodexosuite@sodexo.com<b></span>'
+    )
+    //- +TEXT(
+    //-     '<p style="font-size: 19px; text-align: left; line-height: 25px; color: #fff;"><img src="https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/Recurso%2024.png" style="translate: 0 -40px;"><b style="font-size: 24px;">Activa tu usuario:</b> <br><br> Recibirás un correo electrónico de <br> <span style="color: #FFAC00;">notificaciones.motivacion.mx@app.sodexo.com</span> con el asunto <b>SODEXO SUITE - ACTIVAR USUARIO.</b><br><br> <span style="color: #FFAC00;">Haz clic en la liga que viene dentro del correo</span> y activa tu cuenta <br><br> Para ingresar, <span style="color: #FFAC00;">introduce tu usuario y contraeña, selecciona la razón social, producto y contrato con el que trabajarás.</span><br><br> <span style="color: #FFAC00; display: felx; justify-content: center; align-items: center">Si tienes dudas o comentarios escríbenos a:</span> <br><b>soporte.sodexosuite@sodexo.com</b></p>'
+    //- )
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/SDX_SDXSuite-(3)_05.jpg',
+        'Sodexo'
+    )

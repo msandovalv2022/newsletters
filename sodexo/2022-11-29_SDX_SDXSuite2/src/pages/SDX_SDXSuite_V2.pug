@@ -1,0 +1,29 @@
+extends ../template/main
+append variables 
+    - pathImage = ''
+block content
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/bannerv2.png',
+        'Sodexo'
+    )
+    +MARGIN(
+        '10px'
+    )
+
+    +TEXT(
+        '<p style="font-size: 19px; line-height: 25px; color: #2A2763; max-width: 600px">Queremos seguir ofreciéndote experiencias excepcionales <br> que hagan tus procesos de compra ¡Mucho + ágiles, <br> seguros y eficientes! <br><br><b>A partir del 13 de diciembre de 2022</b> podrás realizar <br> tus operaciones y administrar tus servicios<br> en nuestra nueva plataforma web </p> <br><br><br> <img style="max-width: 100%; margin-top: 20px;" src= "https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/logoSdx.png">'
+    )
+
+    +TEXT(
+        '<p style="font-size: 19px; line-height: 25px; color: #2A2763;"><b>¡IMPORTANTE!</b> para que podamos realizar el procesos de <br> migración a la nueva plataforma es indispensable que no <br> tengas pedidos abiertos, ya que del 9 al 12 de septiembre,<br> la plataforma <b>Vive Sodexo estará inhabilitada.</b></p>'
+    )
+
+
+    +MARGIN(
+        '50px'
+    )
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/SDX_SDXSuite-(3)_05.jpg',
+        'Sodexo'
+    )

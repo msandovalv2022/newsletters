@@ -1,0 +1,119 @@
+extend ../templates/main
+block content
+
+    include ../components/header
+
+     table(border="0" cellpadding="0" cellspacing="0" width="800" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(width="40")
+            td(style=`${fontSet}` width="720")
+                span(style=`color: #3c3c3c; font-size: 16px;`) <strong style="font-size: 19px;">¿Por qué no puedo ingresar mi factura?</strong><br><br>Por favor verifique que haya recibido su GR en nuestro sistema (Good recipt o recibo de aceptación). Para obtener el GR usted debe seguir el siguiente proceso:<br><br><strong>Orden de compra de Materiales</strong><br><br>Entregar en almacén el material correcto, completo y acorde a lo especificado en la orden de compra. SIEMPRE deberá incluir copia de factura con su entrega (la factura debe llevar la descripción del material, número de serie, así como cualquier información relevante especificada en la orden de compra). En caso de químicos, acompañar su factura con su respectivo certificado de calidad y la hoja de datos de seguridad que incluya el pictograma del sistema globalmente armonizado.<br><br>Enviar su factura vía correo electrónico al almacenista solicitando su GR.<br><br>Una vez que su GR haya sido ingresado en el sistema de Saavi, recibirá un correo electrónico con el número de recibo y orden de compra para que pueda ingresar la factura en el portal de proveedores.<br><br>Por favor considere que el sistema se sincroniza cada 4 horas, es posible que deba esperar este tiempo antes de poder ingresar su factura.<br><br><strong>Orden de compra de Servicios</strong><br><br>Una vez concluido el servicio, pedir al solicitante firma del formato de aceptación del servicio (de aplicar) o una confirmación vía correo electrónico de que el servicio fue finalizado satisfactoriamente.<br><br>Enviar el informe y factura con la evidencia del servicio proporcionado al solicitante/personal que lo atendió que viene indicado en la orden de compra.<br><br>El solicitante o técnico que lo atendió deberá solicitar GR a su almacén vía electrónica anexando: formato de aceptación del servicio firmado por el solicitante (o correo electrónico indicado en el punto 1),  PO y factura correspondiente, así como cualquier entregable dictado en la PO.<br><br>Una vez que su GR haya sido ingresado, recibirá un correo electrónico con el número de recibo y orden de compra para que pueda ingresar la factura en el portal de proveedores.<br><br>Por favor considere que el sistema se sincroniza cada 4 horas, es posible que deba esperar este tiempo antes de poder ingresar su factura.<br><strong>PARA SERVICIOS OTORGADOS EN CDMX POR FAVOR CONTACTE AL SOLICITANTE SAAVI DEL MISMO.</strong><br><br><strong>Proveedor REPSE</strong><br><br>1.	Obtener su GR.<br>2.	Cargar documentación correcta y completa aplicable y una vez aprobada podrá cargar su factura. Si la información no está correcta o completa, esta será rechazada y deberá ser remplazada. Por favor contacte a su comprador para obtener el manual detallado de la documentación requerida.<br><br><strong>En caso de dudas o aclaraciones y dependiendo de la razón social a la que esté proporcionando servicios favor de contactar al personal de Compras correspondiente:</strong><br><br>
+                table(border="1" cellpadding="8" cellspacing="0" width="720" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr
+                        td(colspan="3" align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;") 
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Contacto Compras
+                    tr
+                        td(align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Razón social
+                        td(align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Ejecutivo de Compras
+                        td(align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Correo electrónico
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Energía Azteca X, S.A. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) José A. Romero
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) jose.romero@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Energía de Baja California, S. de R.L. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) José A. Romero
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) jose.romero@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Energía San Luis de la Paz, S.A. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Jorge Durán
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) jorge.duran@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Energía Azteca VIII, S. de R.L. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Jorge Durán
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) jorge.duran@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Energía Campeche, S.A. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Marco J. Romano
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) marco.Romano@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Compresión Altamira, S.A. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Delia Balboa
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) delia.balboa@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Compresión Bajío, S. de R.L. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Delia Balboa
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) delia.balboa@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Energía Chihuahua, S.A. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Ixchel Vázquez
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) ixchel.Vazquez@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) GDD de Personal S. de R.L. de C.V.
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Joel Carrera
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) joel.carrera@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Documentos REPSE
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) María E. Lugo
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            span(style=`color: #3c3c3c; font-size: 16px;`) maria.lugo@saavienergia.com
+                <br>
+                 table(border="1" cellpadding="8" cellspacing="0" width="720" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr
+                        td(colspan="3" align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;") 
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Contactos cuentas por pagar
+                    tr
+                        td(align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Contacto
+                        td(align="center" style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            strong(style=`color: #3c3c3c; font-size: 16px;`) Correo electrónico
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Enrique Sánchez
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) enrique.sanchez@saavienergia.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) María Cárdenas
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) maria.cardenas@saavienergía.com
+                    tr
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) Tania de la Cruz
+                        td(style="font-family: arial, helvetica, sans-serif; line-height: 1; mso-line-height-alt: 100%;")  
+                            span(style=`color: #3c3c3c; font-size: 16px;`) tania.delacruz@saavienergia.com
+            td(width="40")
+    
+    include ../components/footer

@@ -1,0 +1,42 @@
+mixin BANNER_960(imgHero, imgHeroBannerAlt)
+    table(border="0" cellpadding="0" cellspacing="0" width="960" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(align="center" style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${pathImage}${imgHero}` alt=`${imgHeroBannerAlt}` width="960" style="width: 960px;")
+
+mixin BANNER_960_URL(imgHero, imgHeroBannerAlt, imgHeroUrl)
+    table(border="0" cellpadding="0" cellspacing="0" width="960" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(align="center" style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgHeroUrl}`) 
+                    img(src=`${pathImage}${imgHero}` alt=`${imgHeroBannerAlt}` width="960" style="width: 960px;")
+
+mixin BANNER_800(imgHero, imgHeroBannerAlt)
+    table(border="0" cellpadding="0" cellspacing="0" width="800" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(align="center" style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${pathImage}${imgHero}` alt=`${imgHeroBannerAlt}` width="800" style="width: 800px;")
+
+mixin BANNER_800_URL(imgHero, imgHeroBannerAlt, imgHeroUrl)
+    table(border="0" cellpadding="0" cellspacing="0" width="800" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(align="center" style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgHeroUrl}`) 
+                    img(src=`${pathImage}${imgHero}` alt=`${imgHeroBannerAlt}` width="800" style="width: 800px;")
+
+mixin BANNER_760_URL(imgHero, imgHeroUrl)
+    table(border="0" cellpadding="0" cellspacing="0" width="760" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(align="center" style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgHeroUrl}`) 
+                    img(src=`${imgHero}` width="760" style="width: 760px;")
+
+mixin BANNER_760(imgHero, imgHeroBannerAlt)
+    table(border="0" cellpadding="0" cellspacing="0" width="800" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(width="800" align="center" style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${pathImage}${imgHero}` alt=`${imgHeroBannerAlt}` width="760" style="width: 760px;")
+
+mixin MARGEN(altura)
+    table(border="0" cellpadding="0" cellspacing="0" width="976" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr: td(height=`${altura}`)

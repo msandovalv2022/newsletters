@@ -1,0 +1,53 @@
+extends ../template/main
+append variables 
+    - pathImage = ''
+block content
+
+    
+    +HEADER_MOB(
+        'https://blog.sodexo.com.mx/hubfs/mobilidad-octubre/experiencias.png',
+        'Experiencias',
+        'Octubre 2022'
+    )
+    
+    +HERO_BANNER(
+        'https://mcusercontent.com/f8003344e5055720b1568282f/images/9a104ef6-1478-4e39-f858-4894c8287ca1.jpg',
+        'Consumidor'
+    )
+    
+    //- HERO BANNER
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-hero-banner.png',
+        'Consumidor hero banner'
+    )
+
+    +NOTA_LEFT_ALT(
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-front-1-thumb.png',
+        'Thumbnail',
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-front-1-content.png',
+        'Trabajo remoto o presencial',
+        'https://blog.sodexo.com.mx/blog/trabajo-presencial-trabajo-remoto'
+    )
+    
+    +NOTA_RIGHT_ALT(
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-front-2-content.png',
+        'Fintech en México',
+        'https://blog.sodexo.com.mx/blog/conoce-a-las-fintech-y-sus-ventajas',
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-front-2-thumb.png',
+        'Thumbnail'
+    )
+
+    +NOTA_LEFT_ALT(
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-front-3-thumb.png',
+        'Thumbnail',
+        'https://blog.sodexo.com.mx/hubfs/nl-con-oct-2022/consumidor-50-front-3-content.png',
+        'Celebración de día de muertos',
+        'https://blog.sodexo.com.mx/blog/dias-de-vacaciones-por-ano'
+    )
+    
+    +MARGIN('16')
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/consumidor-agosto-footer-alisa-paz.jpg',
+        'Footer Alisa Paz'
+    )

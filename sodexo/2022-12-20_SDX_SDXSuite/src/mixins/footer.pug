@@ -1,0 +1,99 @@
+-
+    let pathImgFooter = 'https://blog.sodexo.com.mx/hubfs/sdxclub1/'
+
+    const SOCIALS = [
+        {
+            icon: 'sdx-fb.png',
+            iconAlt: 'Facebook Sodexo',
+            iconUrl: 'https://www.facebook.com/SodexoMx',
+            iconSide: 'left',
+        },
+        {
+            icon: 'sdx-tw.png',
+            iconAlt: 'Twitter Sodexo',
+            iconUrl: 'https://twitter.com/sodexomx',
+            iconSide: 'center',
+        },
+        {
+            icon: 'sdx-ig.png',
+            iconAlt: 'Instagram Sodexo',
+            iconUrl: 'https://instagram.com/sodexomx/',
+            iconSide: 'right',
+        },
+    ]
+
+mixin FOOTER(nombreAsesor)
+    table(border="0" cellpadding="0" cellspacing="0" width="600" bgcolor=`${darkBluePurple}` role="presentation" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr: td(height="32", colspan="3")
+        tr
+            td(width="40")
+            td(style=`${resetText}` align="left")
+                table(border="0" cellpadding="0" cellspacing="0" width="auto" role="presentation" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr: td(align="left" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                        strong(style="color: #FFFFFF; font-size: 17px;") !{`${nombreAsesor}`}
+                        <br><br>
+                table(border="0" cellpadding="0" cellspacing="0" width="auto" role="presentation" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr
+                        td(align="left" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            a(href="tel:5550912414" rel="noopener" target="_blank") 
+                                img(src=`${pathImgFooter}sdx-tel.png` alt=`55.5091.2414` width="99" height="auto" style="width: 99px; height: auto;")
+                        td(align="left" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            a(href="https://www.sodexo.com.mx/" rel="noopener" target="_blank")
+                                img(src=`${pathImgFooter}sdx-web.png` alt=`www.sodexo.com.mx` width="147" height="auto" style="width: 147px; height: auto;")
+                    tr: td(height="24" colspan="2")
+                table(border="0" cellpadding="0" cellspacing="0" width="auto" role="presentation" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr
+                        each item in SOCIALS
+                            td(width="93")
+                                a(href=`${item.iconUrl}` rel="noopener" target="_blank")
+                                    img(src=`${pathImgFooter}${item.icon}` alt=`${item.iconAlt}` width="93" height="auto" style="width: 93px; height: auto; display: block;")
+                            td(width="8")
+            td(width="40")
+        tr: td(height="32", colspan="3")
+
+mixin FOOTER_ALT(nombreAsesor)
+    table(border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor=`#053783` role="presentation" style="max-width: 600px; mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr: td(height="24", colspan="3")
+        tr
+            td(width="40")
+            td(style=`${resetText}` align="left")
+                table(border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width: 200px; mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr
+                        td(valign="center" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                            strong(style="color: #FFFFFF; font-size: 14px;") !{`${nombreAsesor}`}
+                            <br>
+                            a(href="tel:5550912414" rel="noopener" target="_blank") 
+                                img(src=`${pathImgFooter}sdx-tel.png` alt=`55.5091.2414` width="100%" height="auto" style="max-width: 80px; height: auto;")
+                            <br>
+                            a(href="https://www.sodexo.com.mx/" rel="noopener" target="_blank") 
+                                img(src=`${pathImgFooter}sdx-web.png` alt=`www.sodexo.com.mx` width="100%" height="auto" style="max-width: 140px; height: auto;")
+            td(width="16")
+            td(style=`${resetText}`)
+                table(border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width: 304px; mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr
+                        td(align="right" width="100%")
+                            each item in SOCIALS
+                                a(href=`${item.iconUrl}` rel="noopener" target="_blank")
+                                    img(src=`${pathImgFooter}${item.icon}` alt=`${item.iconAlt}` width="100%" height="auto" style="max-width: 80px; height: auto;")
+                                | &nbsp;&nbsp;&nbsp;
+            td(width="40")
+        tr: td(height="24", colspan="3")
+
+mixin FOOTER_FLUID
+    table(border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor=`#2c256b` role="presentation" style="max-width: 600px; mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr
+            td(valign="top" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                a(href="https://www.sodexo.com.mx/" rel="noopener" target="_blank") 
+                    img(src=`https://mcusercontent.com/f8003344e5055720b1568282f/images/bb47c2d3-7495-29a9-85a3-06df76068a9a.jpg` alt=`Sodexo` width="100%" height="auto" style="max-width: 255px; height: auto;")
+            
+            td(valign="top" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                a(href="https://www.facebook.com/SodexoMx" rel="noopener" target="_blank") 
+                    img(src=`https://mcusercontent.com/f8003344e5055720b1568282f/images/c3a9defc-a22f-90ea-fd25-51b9a532be56.jpg` alt=`Facebook` width="100%" height="auto" style="max-width: 117px; height: auto;")
+            
+            td(valign="top" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                a(href="https://twitter.com/sodexomx" rel="noopener" target="_blank") 
+                    img(src=`https://mcusercontent.com/f8003344e5055720b1568282f/images/bcfdbf7d-7560-119b-f40a-5fcde7a09927.jpg` alt=`Twitter` width="100%" height="auto" style="max-width: 92px; height: auto;")
+            
+            td(valign="top" style="font-family: helvetica, arial, sans-serif; line-height: 1; mso-line-height-alt: 100%;")
+                a(href="https://instagram.com/sodexomx/" rel="noopener" target="_blank") 
+                    img(src=`https://mcusercontent.com/f8003344e5055720b1568282f/images/b12bf989-ad6e-1f20-fb1d-f0afeb19597f.jpg` alt=`Instagram` width="100%" height="auto" style="max-width: 136px; height: auto;")

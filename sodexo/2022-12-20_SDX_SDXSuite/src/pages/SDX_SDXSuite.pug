@@ -1,0 +1,63 @@
+extends ../template/main
+append variables 
+    - pathImage = ''
+block content
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/newsletter_sodexo_2022-20-12/header.png',
+        'Header Sodexo'
+    )
+
+    +MARGIN(
+        '10px'
+    )
+
+    +TEXT(
+        '<p align="left" style="color: #2A295C; font-size: 16px; text-align: left; font-weight: bold">Estimado cliente:</9>'
+    )
+
+    +TEXT(
+        '<p style="color: #2A295C; font-size: 100%; line-height: 20px; text-align: left;">Queremos informarte que para el próximo <span style="font-weight: 900; margin-top:20px;">26 de diciembre</span> el horario de atención en nuestras diferentes áreas de soporte será:</p>'
+    )
+
+    +MARGIN(
+        '20px'
+    )
+
+    +TEXT(
+        '<img width="100%" style="max-width: 350px" alt="Calendarios Sodexo" src="https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/newsletter_sodexo_2022-20-12/img01.png">'
+    )
+
+    +MARGIN(
+        '10px'
+    )
+
+    +TEXT(
+        '<p style="background-color: #34A866; padding-left:50px; padding-right:50px; padding-top:10px; padding-bottom:10px; border-radius: 15px; color: #fff; font-size: 100%; line-height: 20px; font-weight: bold">Importante: <br> Te pedimos anticipar tus pedidos para no afectar tu operación, por lo que deberás asegurar todas tus transacciones sean pagadas y atendidas desde el viernes 23 de 2022.</p>'
+    )
+
+    +MARGIN(
+        '10px'
+    )
+
+    +TEXT(
+        '<p align="left" style="color: #2A295C; font-size: 100%; line-height: 20px; text-align: left;">En Sodexo trabajamos para ofrecerte experiencias excepcionales en todo <br> momento.</p>'
+    )
+    +TEXT(
+        '<p align="left" style="color: #2A295C; font-size: 100%; line-height: 20px; text-align: left;">Si tienes alguna duda y/o comentario, ponte en contacto con tu Ejecutivo <br>Comercial o comunícate a nuestro Centro de Atención Sodexo al <br>55.5091.2414.</p>'
+    )
+    +TEXT(
+        '<p align="left" style="color: #2A295C; font-size: 100%; line-height: 20px; text-align: left;">Gracias por tu comprensión.</p>'
+    )
+    +TEXT(
+        '<p align="left" style="color: #2A295C; font-size: 100%; line-height: 20px; text-align: left;">Atentamente, <br><span style="font-weight: 900; margin-top:20px;">Sodexo Beneficios e Incentivos México.</span></p>'
+    )
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/newsletter%2029-11-2022/newsletter_sodexo_2022-20-12/footer.png',
+        'Footer Sodexo'
+    )
+
+
+
+

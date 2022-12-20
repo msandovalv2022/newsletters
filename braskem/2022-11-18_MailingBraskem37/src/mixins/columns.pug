@@ -1,0 +1,99 @@
+mixin ONE_COL(imgBanner, imgBannerAlt)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${imgBanner}`, alt=`${imgBannerAlt}`)
+
+mixin ONE_COL_URL(imgBanner, imgBannerAlt, imgBannerUrl)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBanner}`, alt=`${imgBannerAlt}`)
+
+mixin TWO_COL(imgBannerOne, imgBannerOneAlt, imgBannerTwo, imgBannerTwoAlt)
+    table(border="0", cellpadding="0", cellspacing="0", width=`700`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(width="350", align="left", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}` width="350" style="width: 350px;")
+            td(width="350", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}` width="350" style="width: 350px;")
+
+mixin TWO_COL_URL(imgBannerOne, imgBannerOneAlt, imgBannerOneUrl, imgBannerTwo, imgBannerTwoAlt, imgBannerTwoUrl)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(width="50%", align="left", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerOneUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}`)
+            td(width="50%", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerTwoUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}`)
+
+mixin TWO_COL_URL_ALT(imgBannerOne, imgBannerOneAlt, imgBannerOneUrl, imgBannerTwo, imgBannerTwoAlt, imgBannerTwoUrl)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerOneUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}`)
+            td(style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerTwoUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}`)
+
+mixin THREE_COL(imgBannerOne, imgBannerOneAlt, imgBannerTwo, imgBannerTwoAlt, imgBannerThree, imgBannerThreeAlt)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(width="auto", align="left", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                img(src=`${imgBannerThree}`, alt=`${imgBannerThreeAlt}`)
+
+mixin THREE_COL_URL(imgBannerOne, imgBannerOneAlt, imgBannerOneUrl, imgBannerTwo, imgBannerTwoAlt, imgBannerTwoUrl, imgBannerThree, imgBannerThreeAlt, imgBannerThreeUrl)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(width="auto", align="left", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerOneUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerTwoUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerThreeUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerThree}`, alt=`${imgBannerThreeAlt}`)
+
+mixin FOUR_COL_URL(imgBannerOne, imgBannerOneAlt, imgBannerOneUrl, imgBannerTwo, imgBannerTwoAlt, imgBannerTwoUrl, imgBannerThree, imgBannerThreeAlt, imgBannerThreeUrl, imgBannerFour, imgBannerFourAlt, imgBannerFourUrl)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(width="auto", align="left", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerOneUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerTwoUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerThreeUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerThree}`, alt=`${imgBannerThreeAlt}`)
+            td(width="auto", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerFourUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerFour}`, alt=`${imgBannerFourAlt}`)
+
+
+mixin TWO_COL_URL_TODO(imgBannerOne, imgBannerOneAlt, imgBannerOneUrl, imgBannerTwo, imgBannerTwoAlt, imgBannerTwoUrl, imgBannerThree, imgBannerThreeAlt, imgBannerThreeUrl)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr    
+            td(width="50%", align="left", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                a(href=`${imgBannerOneUrl}`, rel="noopener", target="_blank") 
+                    img(src=`${imgBannerOne}`, alt=`${imgBannerOneAlt}`)
+            td(width="50%", align="right", style="font-size: 0.001px; line-height: 1; mso-line-height-alt: 1%;")
+                table(border="0", cellpadding="0", cellspacing="0", width="auto" style="mso-table-lspace: 0; mso-table-rspace: 0;")
+                    tr: td    
+                        a(href=`${imgBannerTwoUrl}`, rel="noopener", target="_blank") 
+                            img(src=`${imgBannerTwo}`, alt=`${imgBannerTwoAlt}`)
+                    tr: td    
+                        a(href=`${imgBannerThreeUrl}`, rel="noopener", target="_blank") 
+                            img(src=`${imgBannerThree}`, alt=`${imgBannerThreeAlt}`)
+
+mixin MARGIN(altura)
+    table(border="0", cellpadding="0", cellspacing="0", width=`${maxWidth}`, bgcolor="", style="mso-table-lspace: 0; mso-table-rspace: 0;")
+        tr: td(height=`${altura}`)

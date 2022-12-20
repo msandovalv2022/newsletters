@@ -1,0 +1,24 @@
+extends ../template/main
+append variables 
+    - pathImage = 'https://blog.sodexo.com.mx/hubfs/'
+block content
+    
+    +HERO_BANNER(
+        'pp_header.png',
+        'Sodexo'
+    )
+    
+    +HERO_BANNER(
+        'pp_caption.png',
+        'Sodexo'
+    )
+   
+    +CONTENT(
+        '<br><img src="https://blog.sodexo.com.mx/hubfs/pp_top.png" alt="pleca" width="160" style="width: 160px;"><br><br><br><span style="color: #228085;">¿Cómo participar?<br><br><strong style="font-size: 21px;">Solo realiza tu dispersión navideña durante noviembre y/o diciembre*</strong><br><br>Y si eres de los clientes con el número de dispersión 5, 10, 15, 20, 25, 30, 35, 40, 45, 50*<br><br><strong style="color: #ee0000; font-size: 32px;">¡Ya ganaste!</strong></span><br><br><br><img src="https://blog.sodexo.com.mx/hubfs/pp_bottom.png" alt="pleca" width="160" style="width: 160px;"><br><br> <p style = "font-size:12px; color:#000000; text-align: left;">* Solo habrá un ganador por cliente. Consulta las bases en www.sodexo.com.mx/premiumpass. <br> Los ganadores se comunicarán a través del correo electrónico registrado por el cliente</p>'
+    )   
+    
+    +HERO_BANNER(
+        'pp_footer.png',
+        'Sodexo'
+    )
+    
