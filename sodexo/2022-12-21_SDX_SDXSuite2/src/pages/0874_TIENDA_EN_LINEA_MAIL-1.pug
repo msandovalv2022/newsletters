@@ -1,0 +1,25 @@
+extends ../template/main
+append variables 
+    - pathImage = ''
+block content
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/NEWS_SODEXO_2022-12-21/footer.png',
+        'Hero Banner Sodexo tienda en línea'
+    )
+    +MARGIN(
+        '25px'
+    )
+
+    +TEXT(
+        '<img width="200px" style="max-width: 100%;" alt="Logo Sodexo Tienda en Línea" src= "https://blog.sodexo.com.mx/hubfs/NEWS_SODEXO_2022-12-21/logo_tiendaEnLinea.png">'
+    )
+
+    +MARGIN(
+        '20px'
+    )
+
+    +HERO_BANNER(
+        'https://blog.sodexo.com.mx/hubfs/NEWS_SODEXO_2022-12-21/footer.png',
+        'Footer Sodexo Tienda en Línea'
+    )
